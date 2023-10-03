@@ -1,0 +1,19 @@
+{
+  "name": "@mozeyinedu/format",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/esm/index.js",
+  "module": "lib/cjs/index.js",
+  "scripts": {
+    "build": "rm -rf lib/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJs --outDir lib/cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "typescript": "^5.2.2"
+  }
+}
