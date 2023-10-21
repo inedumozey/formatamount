@@ -1,9 +1,9 @@
 {
   "name": "@mozeyinedu/format",
-  "version": "0.0.1",
+  "version": "0.0.23",
   "description": "",
-  "main": "lib/esm/index.js",
-  "module": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "main": "lib/cjs/index.js",
   "scripts": {
     "build": "rm -rf lib/ && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
