@@ -1,13 +1,16 @@
 {
   "name": "@mozeyinedu/format",
-  "version": "0.0.24",
+  "version": "0.0.3",
   "description": "",
-  "module": "lib/esm/index.js",
-  "main": "lib/cjs/index.js",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
-    "build": "rm -rf lib/ && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module CommonJs --outDir lib/cjs"
+    "build": "rm -rf lib/ && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "publish": "npm publish --access public",
+    "push": "git add . && git commit -m 'updated' && git push origin master"
   },
   "keywords": [],
   "author": "",
