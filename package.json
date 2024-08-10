@@ -1,6 +1,6 @@
 {
   "name": "@mozeyinedu/format",
-  "version": "0.1.1",
+  "version": "0.1.01",
   "description": "",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
