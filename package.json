@@ -11,6 +11,7 @@
     "build": "rm -rf lib/ && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "publish": "npm publish --access public",
     "push": "git add . && git commit -m 'updated' && git push origin master",
+    "push:force": "git add . && git commit -m 'updated' && git push origin master --force",
      "all": "npm run build && npm run push && npm run publish_"
   },
   "keywords": [],
